@@ -1,0 +1,36 @@
+body {
+    background-color: slategray;
+	
+}
+
+h1{
+	color: black;
+	text-align: center;
+	font-size: 50px;
+}
+.employees{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	flex-wrap: wrap;
+	margin: auto;
+}
+.sub{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	flex-wrap: wrap;
+	margin: auto;
+}
+.employee0{
+    border-right: 2px solid black ;
+}
+.employee1{
+    border-right: 2px solid black ;
+}
+.employee2{
+    border-right: 2px solid black ;
+}
+.secret{
+    display: none;
+}

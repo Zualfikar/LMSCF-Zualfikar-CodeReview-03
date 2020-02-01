@@ -1,0 +1,23 @@
+var teamMembers = [
+ 	{"name": "Fran",
+   "email": "fran@index.com",
+   "image": "img/person1.jpg",
+     "birth": "12/6/1970",
+     "salary": "50000$",
+     "telnumber": "1261970"
+  },
+	{"name": "Fritz",
+   "email": "fritz@index.com",
+   "image": "img/person3.jpg",
+      "birth": "02/5/1924",
+     "salary": "200$",
+     "telnumber": "0251924"
+  },	
+    {"name": "Bill",
+   "email": "bill@index.com",
+   "image": "img/person2.jpg",
+      "birth": "29/5/1989",
+     "salary": "60000$",
+     "telnumber": "2951989"
+  }
+]

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> Employees</title>
+	<link rel="stylesheet" type="text/css" href="employees.css">
+	
+	
+</head>
+<body>
+<h1>  Employees</h1>
+	<script src="employees.json"> </script>
+	
+	<script>
+        
+      
+   
+		document.write("<div class='employees'>");
+       
+		for (var i =0; i <teamMembers.length; i++) {
+			document.write("<div class='employee" + i + "'>");
+             document.write("<div> <img src='" + teamMembers[i].image +"'></div>");
+		document.write("<div> The name is :" + teamMembers[i].name+ "</div>");
+        document.write("<div> E-mail addresse : " + teamMembers[i].email + "</div>");
+        document.write("<div class='secret'> birth date  is :" + teamMembers[i].birth+ "</div>");
+        document.write("<div class='secret'> The salary is :" + teamMembers[i].salary+ "</div>");
+            document.write("<div class='secret'> Tel number is :" + teamMembers[i].telnumber+ "</div>");
+        document.write("</div>");    
+		}
+		document.write("</div>");
+       
+        
+        document.write("<div class='sub'>");
+        document.write("<div id='person1'> <button type='submit'  onclick='mory(0)' >More details </button></div>");
+        document.write("<div id='person2'> <button type='submit'  onclick='mory(1)' >More details </button></div>");
+        document.write("<div id='person3'> <button type='submit'  onclick='mory(2)' >More details </button></div>");
+        document.write("</div>");
+       
+        
+        
+          function mory(value1) {
+           
+           if(value1 == 0){
+           document.getElementsByClassName("secret")[0].style.display="block" ; document.getElementsByClassName("secret")[1].style.display="block" ; document.getElementsByClassName("secret")[2].style.display="block" ;
+             }
+              else if (value1 == 1){
+                 document.getElementsByClassName("secret")[3].style.display="block" ; document.getElementsByClassName("secret")[4].style.display="block" ; document.getElementsByClassName("secret")[5].style.display="block" ;  
+              }
+              else{
+                   document.getElementsByClassName("secret")[6].style.display="block" ; document.getElementsByClassName("secret")[7].style.display="block" ; document.getElementsByClassName("secret")[8].style.display="block" ;
+              }
+        }
+	</script>
+</body>
+</html>
